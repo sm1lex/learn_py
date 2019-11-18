@@ -20,4 +20,11 @@ print(5 != 7)#not equal
 x = True
 y = False
 #boolean <not/and/or> f
-print((33+ 3)* 2)
+print(2 << 2 + 3 * 2)
+#one example of operands and expression
+leangth = 4
+breadth = 5
+area = leangth * breadth
+print('Area this reactagle is', area)
+print('And perimeter this figure is', 2 * (leangth + breadth))
+
