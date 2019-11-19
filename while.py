@@ -10,7 +10,7 @@ while running:
         print('Congrats, you guessed this number.')
         running = False
     elif guess < number:
-        print('Try enter a higher number.')
+       print('Try enter a higher number.')
     else:
         print('Try enter a lower number.')
 else:

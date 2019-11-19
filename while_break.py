@@ -5,7 +5,7 @@ while True:
         break
     if len(s) < 3:
         print('To small length')
-        continue
+        continue 
     print ('Length of the string is', len(s))
 else:
     print ('Common every body i hack the system')
