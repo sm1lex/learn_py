@@ -24,15 +24,17 @@ class Robot:
     def robot_greeting(self):
         print('Greetings, my master call me {}'. format(self.name))
 
-#    def howmany_robots(self):
-#        """Prints the current number of robots."""
-#        print('We have {:d} robots.'. format(Robot.robot_number))
-#        howmany_robots = staticmethod(howmany_robots)
+
+    def howmany_robots():
+        """Prints the current number of robots."""
+        print('We have {} robots.'. format(Robot.robot_number))
 
         """This another example how we can use decorators."""
-    @classmethod 
-    def howmany_robots(cls):
-        print('We have {:d} robots.'. format(cls.robot_number))
+    
+    howmany_robots = staticmethod(howmany_robots)
+#   @classmethod 
+#   def howmany_robots(cls):
+#       print('We have {:d} robots.'. format(cls.robot_number))
 
 dron1 = Robot('R2-D2')
 dron1.robot_greeting()
