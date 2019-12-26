@@ -11,7 +11,7 @@ class SchoolMember:
 
     def tell(self):
         """Details for school member"""
-        print('Name {}, Age {}'. format(self.name, self.age))
+        print('Name {}, Age {}'. format(self.name, self.age), end=" ")
 
 class Teacher(SchoolMember):
     """Teacher subclass have one advanced variable <salary>"""
@@ -22,6 +22,7 @@ class Teacher(SchoolMember):
         print('Initialized Teacher: {}'. format(self.name))
 
     def tell(self):
+        SchoolMember.tell(self)
         print('Teacher Salary : "{}"'. format(self.salary))
     SchoolMember.count_school_member +=1 
 class Student(SchoolMember):
@@ -31,6 +32,7 @@ class Student(SchoolMember):
         print('Initialize Student: {}'. format(self.name))
 
     def tell(self):
+        SchoolMember.tell(self)
         print('Our Student study at: {}'. format(self.course))
     SchoolMember.count_school_member +=1
 
