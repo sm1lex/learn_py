@@ -2,16 +2,19 @@ input_str = input('Enter some word for check: ')
 
 
 
-str_intuple = ('some work ! wit a')
-del_symbol =  ['?', '!',':', ';', '-', '(', '{}', '[]', '!', '' '', '_', ',']
+#str_intuple = ('some work ! wit a')
+del_symbol =  (' ', '!',':', ';', '-', '(', '{}', '[]', '!', '' '', '_', ',', ' ')
+del_scope = (["!", " "])
 #print(str_intuple & del_symbol)
 #print(str_intuple in del_symbol)
 
-for i in str_intuple:
-    if i == '!':
+modify_str = [input_str] 
 
-        print(i)
-        del i
-
-    print(i, end=' ')
+for i in input_str:
+    if i in del_symbol:
+        del i 
+    else:
+        print(i, end='')
+print()
+print(input_str)
 
