@@ -1,7 +1,7 @@
 # basic principles of using files
 
 ipsum = '''\
-Programming is fun, when the programm is done
+!!!!!!Programming is fun, when the programm is done
 if you wanna have a good and interesting job:
     use Python everywere!
 '''
